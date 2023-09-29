@@ -87,7 +87,7 @@ header .web-svg {
   header .mobile-svg {
     display: flex;
     width: 30px;
-    justify-content: flex-end;
+    margin-right: 0 80px;
   }
   header .web-svg {
     display: none;
