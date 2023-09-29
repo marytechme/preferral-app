@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildStyles": "sass -w ./index.scss ./index.css"
+    "buildStyles": "sass -w ./styles/index.scss ./styles/index.css"
   },
   "keywords": [],
   "author": "",
