@@ -188,14 +188,9 @@ main {
     font-size: 20px;
     padding: 20px 0;
   }
-  .left-network-list .left-network-list {
+  .left-network-list .left1-4 {
     display: flex;
-  }
-  .left-network-list .left-network-list .left1 {
-    display: flex;
-  }
-  .left-network-list .left-network-list .left2 {
-    display: flex;
+    gap: 20px;
   }
 }
 

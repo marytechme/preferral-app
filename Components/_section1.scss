@@ -95,12 +95,15 @@
 
 @media screen and (max-width: 500px) {
     .left-network-list{
-
         h1{
             color: rgb(77, 77, 77);
             font-size: 20px;
             padding: 20px 0;
         }
+       .left1-4{
+        display: flex;
+        gap: 20px;
+       }
 
     }
 }
