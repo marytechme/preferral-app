@@ -1,18 +1,202 @@
-/* Error: Undefined variable.
- *    ,
- * 10 |         color: $color;
- *    |                ^^^^^^
- *    '
- *   Components\_header.scss 10:16  @import
- *   styles\index.scss 2:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502          color: $color;\d\a    \2502                 ^^^^^^\a    \2575 \a   Components\\_header.scss 10:16  @import\a   styles\\index.scss 2:9          root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+
+header {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+header h2 {
+  color: blue;
+  font-size: 20px;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+header .mobile-svg {
+  display: none;
+}
+header .web-svg {
+  display: flex;
+  width: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  header a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  header .mobile-svg {
+    display: none;
+  }
+  header .web-svg {
+    display: flex;
+    width: 35px;
+  }
+}
+@media screen and (max-width: 700px) {
+  header nav {
+    gap: 15px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  header .mobile-svg {
+    display: none;
+  }
+  header .web-svg {
+    display: flex;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+  header h2 {
+    color: blue;
+    font-size: 20px;
+    padding: 20px;
+  }
+  header a {
+    display: none;
+  }
+  header .mobile-svg {
+    display: flex;
+    width: 30px;
+    justify-content: flex-end;
+  }
+  header .web-svg {
+    display: none;
+  }
+}
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.left-network-list h1 {
+  color: rgb(77, 77, 77);
+  font-size: 20px;
+  padding: 20px 0;
+}
+.left-network-list .left1 {
+  padding: 10px 0;
+}
+.left-network-list .left1 h3 {
+  font-size: 18px;
+}
+.left-network-list .left1 p {
+  font-size: 15px;
+}
+.left-network-list .left2 {
+  padding: 10px 0;
+}
+.left-network-list .left2 h3 {
+  font-size: 18px;
+}
+.left-network-list .left2 p {
+  font-size: 15px;
+}
+.left-network-list .left3 {
+  padding: 10px 0;
+}
+.left-network-list .left3 h3 {
+  font-size: 18px;
+}
+.left-network-list .left3 p {
+  font-size: 15px;
+}
+.left-network-list .left4 {
+  padding: 10px 0;
+}
+.left-network-list .left4 h3 {
+  font-size: 18px;
+}
+.left-network-list .left4 p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .left-network-list h1 {
+    font-size: 18px;
+    padding: 18px 0;
+  }
+  .left-network-list .left1 {
+    padding: 10px 0;
+  }
+  .left-network-list .left1 h3 {
+    font-size: 16px;
+  }
+  .left-network-list .left1 p {
+    font-size: 13px;
+  }
+  .left-network-list .left2 {
+    padding: 10px 0;
+  }
+  .left-network-list .left2 h3 {
+    font-size: 16px;
+  }
+  .left-network-list .left2 p {
+    font-size: 13px;
+  }
+  .left-network-list .left3 {
+    padding: 10px 0;
+  }
+  .left-network-list .left3 h3 {
+    font-size: 16px;
+  }
+  .left-network-list .left3 p {
+    font-size: 13px;
+  }
+  .left-network-list .left4 {
+    padding: 10px 0;
+  }
+  .left-network-list .left4 h3 {
+    font-size: 16px;
+  }
+  .left-network-list .left4 p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .left-network-list h1 {
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  .left-network-list .left-network-list {
+    display: flex;
+  }
+  .left-network-list .left-network-list .left1 {
+    display: flex;
+  }
+  .left-network-list .left-network-list .left2 {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
