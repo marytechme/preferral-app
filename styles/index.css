@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 10 |         color: $color;
+ *    |                ^^^^^^
+ *    '
+ *   Components\_header.scss 10:16  @import
+ *   styles\index.scss 2:9          root stylesheet */
 
-header {
-  display: flex;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502          color: $color;\d\a    \2502                 ^^^^^^\a    \2575 \a   Components\\_header.scss 10:16  @import\a   styles\\index.scss 2:9          root stylesheet";
 }
-header h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-/*# sourceMappingURL=index.css.map */
